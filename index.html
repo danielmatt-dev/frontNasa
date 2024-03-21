@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nasa-API</title>
+</head>
+
+<body>
+    <p>Consumo de Nasa-API para Images</p>
+    
+    <div>
+        <label>ID</label>
+        <input type="text" id="id">
+    </div>
+    <div>
+        <label>img_src</label>
+        <input type="text" id="img">
+    </div>
+    <div>
+        <label>nombre_camara</label>
+        <input type="text" id="camara">
+    </div>
+    <div>
+        <label>fecha_tierra</label>
+        <input type="text" id="fecha">
+    </div>
+
+    <div>
+        <label>nombre_rover</label>
+        <input type="text" id="rover">
+    </div>
+
+    <button onclick="postImage()">POST image</button>
+    <button onclick="getImages()">GET images</button>
+
+    <div id="resultado"></div>
+
+    <script src="callrestapi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
